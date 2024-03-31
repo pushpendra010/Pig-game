@@ -48,6 +48,17 @@ if(dice !=1){
 }
 );
 
+btnHold.addEventListener('click',function(){
+   //1. add current score to active player
+   scores[activePlayer] += currentScore;
+   //scores[1] = scores[1]+currentScore;
+   document.getElementById(`current--${activePlayer}`).textContent = scores[activePlayer];
+
+   //2. check if player's score is 100 or not
+   
+   //3. switch to next player
+});
+
 
 
 
